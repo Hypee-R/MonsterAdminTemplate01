@@ -1,0 +1,184 @@
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    /* overflow: auto; */
+    position: fixed;
+    /* z-index: 99; */
+    background-color: var(--color-background);
+}
+
+.sideBar {
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    /* background-image: linear-gradient(to bottom, #0b0f10, #090d0e, #080b0c, #06080a, #040607, #040709, #04090b, #040a0d, #070f12, #0a1317, #0c161b, #0e191f); */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    padding-left: 0;
+}
+
+.sideBar-chico {
+    height: 100vh;
+    width: 5vw;
+    position: fixed;
+    background: #212121;
+    /* background-image: linear-gradient(to bottom, #0b0f10, #090d0e, #080b0c, #06080a, #040607, #040709, #04090b, #040a0d, #070f12, #0a1317, #0c161b, #0e191f); */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sideNav {
+    position: fixed;
+    /* z-index: 100; */
+    /* padding-left: 17vw; */
+    padding: 0;
+    padding-right: 3.4rem;
+    min-height: 48px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.sideNav-chico {
+    position: fixed;
+    /* z-index: 100; */
+    min-height: 48px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.contenidoNormal {
+    height: 100vh;
+    width: calc(100vw - 14vw);
+    margin-left: 15vw;
+    /* padding: 1rem; */
+    position: absolute;
+    /* z-index: -1; */
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+    margin-top: 78px;
+}
+
+.contenido-chico {
+    height: 100vh;
+    width: calc(100vw - 7.5vw);
+    margin-left: 8.5vw;
+    /* padding: 1rem; */
+    position: absolute;
+    /* z-index: -1; */
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    transition: all .6s ease;
+    margin-top: 78px;
+}
+
+.side-user {
+    top: 78px;
+    right: 1em;
+    background: var(--color-white);
+    color: var(--color-dark);
+    position: absolute;
+    /* z-index: 100; */
+    border-left: 2px solid var(--color-white);
+    width: 14vw;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+.loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* z-index: 101; */
+    background: rgba(255, 255, 255, 1);
+}
+
+.contenido-outled {
+    /* width: calc(100vw - 15vw); */
+    height: calc(100vh - 79px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1vw;
+}
+
+
+/* MONITOR */
+
+@media only screen and (min-width: 1920px) {
+    .contenidoNormal {
+        width: calc(100vw - 10.5vw);
+        margin-left: 11.5vw;
+    }
+    .contenido-chico {
+        width: calc(100vw - 6vw);
+        margin-left: 7vw;
+    }
+}
+
+
+/* LAPTOP */
+
+@media only screen and (max-width: 1280px) {
+    .sideNav {
+        padding-right: 0;
+    }
+    .sideNav-chico {
+        width: calc(100vw - 3vw);
+        left: 3vw;
+    }
+}
+
+
+/* CELULAR */
+
+@media only screen and (max-width: 768px) {
+    .sideNav {
+        width: 100vw;
+        height: 65px;
+        padding-right: 0;
+    }
+    .sideBar {
+        top: -1px;
+        /* width: 100vw; */
+        left: calc(102vw - 53rem);
+        height: 101vh;
+        z-index: 3;
+    }
+    .sideBar.toggled {
+        left: 0rem !important;
+    }
+    .side-user {
+        /* z-index: 99; */
+        height: 19vh;
+        width: 51vw !important;
+        right: 3em;
+        border-radius: 0;
+    }
+    .contenidoNormal {
+        width: 100vw;
+        /* background-color: white; */
+        margin-left: 0;
+        margin-top: 65px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contenedor {
+        background-color: var(--color-background) !important;
+    }
+}

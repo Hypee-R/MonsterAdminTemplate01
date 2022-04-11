@@ -1,0 +1,198 @@
+.nav {
+    background: var(--color-background);
+    background-size: 100%;
+    min-height: 78px;
+    max-height: 78px;
+    padding: 0;
+    background-repeat: no-repeat;
+    /* box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .15); */
+}
+
+.height-nav {
+    min-height: 78px;
+    max-height: 78px;
+}
+
+.active-nav-item {
+    background-color: white;
+    transition: all .5s;
+}
+
+.expand {
+    cursor: pointer;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+}
+
+.expand:hover {
+    width: 1.5vw !important;
+}
+
+.logo {
+    display: flex;
+    gap: 0.8rem;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.close {
+    display: none;
+}
+
+.profile-photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+.main-logo {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.right {
+    margin-top: 1.4rem;
+}
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .theme-toggler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .theme-toggler span.active {
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu span {
+    color: var(--color-dark);
+}
+
+
+/* ========= MEDIA QUERIES ============ */
+
+@media screen and (max-width: 1200px) {
+    .logo h2 {
+        display: none;
+    }
+    .right .top {
+        margin-right: 5em;
+    }
+    button {
+        display: none;
+    }
+}
+
+
+/* CELULAR Y TABLET */
+
+@media screen and (max-width: 769px) {
+    button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+    button span {
+        font-size: 2rem;
+    }
+    .nav {
+        min-height: 65px;
+        max-height: 65px;
+        background: var(--color-white);
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+    .height-nav {
+        min-height: 65px;
+        max-height: 65px;
+    }
+    .logo {
+        display: none !important;
+    }
+    .right {
+        width: 100%;
+        margin: 0 auto 4rem;
+    }
+    .right .top {
+        /* position: fixed;
+        top: 0;
+        left: 0; */
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+    }
+    .right .top .theme-toggler {
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+        margin-top: 0;
+    }
+    .right .profile .info {
+        display: none;
+    }
+}

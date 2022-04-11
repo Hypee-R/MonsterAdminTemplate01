@@ -1,0 +1,331 @@
+/* ================ DASHBOARD ===================*/
+
+
+/* main {
+    margin-top: 1.4rem;
+} */
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.date {
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+.date input[type='date'] {
+    background: transparent;
+    color: var(--color-dark);
+}
+
+
+/* main .insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+} */
+
+.container {
+    max-width: fit-content;
+    margin-right: 0;
+}
+
+.sales,
+.expenses,
+.income {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.sales:hover,
+.expenses:hover,
+.income:hover {
+    box-shadow: none;
+}
+
+.sales span,
+.expenses span,
+.income span {
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.expenses span {
+    background: var(--color-danger);
+}
+
+.income span {
+    background: var(--color-success);
+}
+
+.sales .middle,
+.expenses .middle,
+.income .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle h3 {
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.middle .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+.middle svg {
+    width: 7rem;
+    height: 7rem;
+    background: var(--color-white);
+}
+
+.middle svg circle {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+
+.sales svg circle {
+    stroke-dasharray: 200;
+    stroke-dashoffset: -30;
+}
+
+.expenses svg circle {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 20;
+}
+
+.income svg circle {
+    stroke-dasharray: 110;
+    stroke-dashoffset: 35;
+}
+
+.middle .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dark);
+}
+
+.sales small,
+.expenses small,
+.income small {
+    margin-top: 1.6rem;
+    display: block;
+}
+
+
+/* ============ RECENT ORDERS ============== */
+
+.recent-orders {
+    margin-top: 2rem;
+}
+
+.recent-orders h2 {
+    margin-bottom: 0.8rem;
+}
+
+.recent-orders table {
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    border-collapse: unset;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.recent-orders table:hover {
+    box-shadow: none;
+}
+
+.recent-orders table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+.recent-orders table tbody tr:last-child td {
+    border: none;
+}
+
+.recent-orders a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+
+/* ================== RECENT UPDATES ================= */
+
+.recent-updates {
+    margin-top: 1rem;
+}
+
+.recent-updates h2 {
+    margin-bottom: 0.8rem;
+}
+
+.recent-updates .updates {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.recent-updates .updates:hover {
+    box-shadow: none;
+}
+
+.recent-updates .updates .update {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ====================== SALES ANALYTICS ==================== */
+
+.sales-analytics {
+    margin-top: 2rem;
+}
+
+.sales-analytics h2 {
+    margin-bottom: 0.8rem;
+}
+
+.sales-analytics .item {
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.sales-analytics .item:hover {
+    box-shadow: none;
+}
+
+.sales-analytics .item .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+
+.sales-analytics .item .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+}
+
+.sales-analytics .item.offline .icon {
+    background: var(--color-danger);
+}
+
+.sales-analytics .item.customers .icon {
+    background: var(--color-success);
+}
+
+.sales-analytics .add-product {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sales-analytics .add-product:hover {
+    background: var(--color-primary);
+    color: white
+}
+
+.sales-analytics .add-product div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.sales-analytics .add-product div h3 {
+    font-weight: 600;
+}
+
+
+/* ================= MEDIA QUERIES =================== */
+
+@media screen and (max-width: 1200px) {
+    .recent-orders {
+        width: 100%;
+        position: relative;
+    }
+    .recent-orders table {
+        width: 100%;
+        margin: 0;
+    }
+    table thead tr th:last-child,
+    table thead tr th:first-child {
+        display: none;
+    }
+    table tbody tr td:last-child,
+    table tbody tr td:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recent-orders {
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+    .recent-orders table {
+        width: 100%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,54 @@
+<div class="w-100 h-100 nav">
+    <div class="col-2" style="height: 78px;">
+        <div class="main-logo">
+
+            <div class="row">
+                <div class="col-2 col-md-2">
+                    <button id="menu-btn" class="menu" (click)="changeSideVisible()">
+                        <span class="material-icons-sharp" style="cursor: pointer;">menu</span>
+                    </button>
+                </div>
+                <div class="col-10 col-md-10">
+                    <div class="logo">
+                        <img src="assets/img/logo-master.png" alt="logo principal">
+                        <h2>HYP<span class="danger">EER</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="col-6 ovh" style="height: 78px;">
+        <div class="title">
+            <h1>{{pageSelected}}</h1>
+        </div>
+    </div>
+
+    <div class="col-4 ovh" style="height: 78px;">
+        <div class="height-nav right">
+
+            <div class="top">
+
+                <!-- <button id="menu-btn" (click)="changeSideVisible()">
+                  <span class="material-icons-sharp">menu</span>
+               </button> -->
+                <div class="theme-toggler" (click)="changeTheme()">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-photo" (click)="showSideUser()">
+                        <img src="assets/img/profile-1.jpg" alt="foto de perfil">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

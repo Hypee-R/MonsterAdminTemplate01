@@ -1,0 +1,63 @@
+<div class="pagina-completa">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 colblanco" style="z-index: 1;">
+                <img src="assets/img/logo.png" class="imglogo">
+                <img src="assets/img/oficina.jpg" class="imgoficina">
+                <h1>Desk to perform more on your work</h1>
+                <h2>Get ready for you precense to make sense</h2>
+                <!-- <center><button type="submit" class="btn btn-primary btnloginon">Login</button></center> -->
+                <button type="button" class="btn btn-primary btnloginon" (click)="showLogin()" style="margin-left: 9em;">Login</button>
+            </div>
+            <div class="col-md-5 colmorado" id="div1">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-primary btn-lg btnmorado"> Sing up</button>
+                    <button type="button" class="btn btn-primary btn-lg btnmorado">Exit</button>
+                </div>
+                <h4>Welcome!</h4>
+                <h5>Sing in to your account</h5>
+                <form class="formulario">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">User Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="us_2345666">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="8 characteres">
+                    </div>
+                    <div class="mb-3 form-check labelforgot">
+                        <label class="form-check-label" for="exampleCheck1" routerLink="/forgot-password">Forgot Password</label>
+                    </div> <br>
+                    <button type="submit" class="btn btn-primary btnlogin" (click)="logIn()">Login</button><br>
+                </form><br>
+                <div>
+                    <h5>Help & Support</h5>
+                </div>
+                <div style="margin-left: 5em;">
+                    <!-- <center><img src="img/google.jpg" class="apps"> <img src="img/app.png" class="apps"></center> -->
+                    <img src="assets/img/google.jpg" class="apps"> &nbsp; <img src="assets/img/app.png" class="apps">
+                </div>
+
+                <div class="row redes">
+
+                    <div class="col-md-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,165 @@
+.pagina-completa {
+    /* la vieja sintaxis, obsoleta, pero todavía necesaria, prefijada, para Opera y Navegadores basados en Webkit */
+    /* background: -prefix-linear-gradient(left top, blue, white); */
+    /* La nueva sintaxis necesaria para navegadores apegados al estandar (IE 10 y Firefox 10 en adelante), sin prefijo */
+    background: linear-gradient(to bottom right, #4c57c1, white);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+/* contenedor1 */
+
+.container {
+    max-width: 780px!important;
+    /* display: flex; */
+    margin-top: 5.5%;
+    margin-bottom: 3.5%;
+}
+
+.colblanco {
+    position: relative;
+    background-color: white;
+}
+
+.imglogo {
+    padding-top: 2%!important;
+    padding-left: 0%!important;
+    max-width: 15%;
+}
+
+.imgoficina {
+    padding-top: 3em;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em!important;
+    padding-top: 2em;
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10.5px!important;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+.btnloginon {
+    background-color: #ef506e!important;
+    border-color: #ef506e!important;
+    border-radius: 27px!important;
+    width: 35%;
+    margin-bottom: 4em;
+}
+
+.animate {
+    display: block;
+    margin: 0 0.5rem;
+    animation: bounceInLeft;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+
+/* contenedor2 */
+
+.colmorado {
+    background-color: #4c57c1;
+    display: none;
+}
+
+.btnmorado {
+    position: relative;
+    margin-top: 1em;
+    padding: 1px!important;
+    background-color: #4c57c1!important;
+    border: solid 0.2em white!important;
+    border-radius: 19px!important;
+    font-size: 12px!important;
+    width: 26%;
+    max-height: 27px;
+}
+
+.btnmorado:hover {
+    background-color: white!important;
+    border-color: #4c57c1!important;
+    color: #4c57c1!important;
+}
+
+h4 {
+    padding-top: 1.5em!important;
+    color: white!important;
+    text-align: center!important;
+}
+
+h5 {
+    color: white!important;
+    text-align: center!important;
+    font-size: .9em!important;
+    padding-bottom: 1em!important;
+}
+
+.formulario {
+    display: block;
+    margin: auto;
+    max-width: max-content;
+}
+
+.form-label {
+    color: white;
+    font-size: 0.8em;
+}
+
+input {
+    background: #3d46a5!important;
+    border-color: transparent!important;
+    max-height: 1.9em;
+}
+
+.labelforgot {
+    text-align: right;
+    color: white;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.labelforgot label {
+    cursor: pointer;
+}
+
+.btnlogin {
+    background-color: #ef506e!important;
+    border-color: #ef506e!important;
+    border-radius: 27px!important;
+    width: -webkit-fill-available!important;
+}
+
+.apps {
+    max-width: 30%;
+}
+
+.redes {
+    text-align: center!important;
+    margin-top: 2em!important;
+    color: white;
+    padding-left: 23%!important;
+    padding-right: 23%!important;
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        margin-top: 14%;
+        margin-bottom: 3.5%;
+    }
+}
