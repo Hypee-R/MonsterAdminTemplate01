@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { VariablesService } from 'src/app/services/variablesGL.service';
 
 @Component({
-  selector: 'app-setings',
-  templateUrl: './setings.component.html',
-  styleUrls: ['./setings.component.css']
+  selector: 'app-settings',
+  templateUrl: './settings.component.html',
+  styleUrls: ['./settings.component.css']
 })
-export class SetingsComponent implements OnInit {
+export class SettingsComponent implements OnInit {
 
   statusPantalla: number;
   constructor(

@@ -178,6 +178,9 @@
         padding-right: 0;
         padding-left: 0;
     }
+    .contenido-outled {
+        padding-top: 2vh;
+    }
     .contenedor {
         background-color: var(--color-background) !important;
     }

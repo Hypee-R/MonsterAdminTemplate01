@@ -14,7 +14,7 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ProductsComponent } from './products/products.component';
 import { ReportsComponent } from './reports/reports.component';
-import { SetingsComponent } from './setings/setings.component';
+import { SettingsComponent } from './settings/settings.component';
 import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
@@ -36,7 +36,7 @@ import { AddProductComponent } from './add-product/add-product.component';
         MessagesComponent,
         ProductsComponent,
         ReportsComponent,
-        SetingsComponent,
+        SettingsComponent,
         AddProductComponent
     ]
 })

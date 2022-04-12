@@ -120,5 +120,8 @@ export class VariablesService {
                       }
           break;
     }
+    if(this.getStatusPantalla() <= 10){
+        this.showSideBar.next(false);
+    }
   }
 }

@@ -8,7 +8,7 @@ import { HomeComponent } from '../pages/home/home.component';
 import { MessagesComponent } from '../pages/messages/messages.component';
 import { ProductsComponent } from '../pages/products/products.component';
 import { ReportsComponent } from '../pages/reports/reports.component';
-import { SetingsComponent } from '../pages/setings/setings.component';
+import { SettingsComponent } from '../pages/settings/settings.component';
 
 export const contentRoutes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -18,7 +18,7 @@ export const contentRoutes: Routes = [
     { path: 'messages', component: MessagesComponent },
     { path: 'products', component: ProductsComponent },
     { path: 'reports', component: ReportsComponent },
-    { path: 'settings', component: SetingsComponent },
+    { path: 'settings', component: SettingsComponent },
     { path: 'add-product', component: AddProductComponent },
     // {
     //     path: 'usuarios',

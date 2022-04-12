@@ -16,7 +16,7 @@ export class AuthGuard implements CanLoad {
 
   canLoad(): boolean {
     if (this.autService.token){
-      console.log("Autenticado");
+      //console.log("Autenticado");
       if(!this.variablesService.pagina.value){
           let paginaActual = localStorage.getItem('pg');
           this.variablesService.pagina.next(paginaActual);
@@ -24,7 +24,7 @@ export class AuthGuard implements CanLoad {
       return true;
     }else {
       localStorage.clear();
-      console.log("No autenticado");
+      //console.log("No autenticado");
       this.router.navigate(['/login'], { replaceUrl: true });
       return false;
     }
