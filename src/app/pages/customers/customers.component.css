@@ -1,11 +1,11 @@
 ::ng-deep .ui-card {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 93px);
     background: var(--color-white) !important;
     color: var(--color-dark) !important;
 }
 
 @media screen and (max-width: 768px) {
      ::ng-deep .ui-card {
-        height: calc(100vh - 92px);
+        height: calc(100vh - 100px);
     }
 }
